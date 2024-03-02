@@ -10,7 +10,7 @@ public class SingletonAdv {
 
     public SingletonAdv getInstance(){
         if(instance == null){
-            synchronized (SingletonAdv.class){
+            synchronized(SingletonAdv.class){
                 if(instance == null){
                     instance = new SingletonAdv();
                 }
